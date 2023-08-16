@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+.slide-in-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+}
