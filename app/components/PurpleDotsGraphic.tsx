@@ -2,7 +2,7 @@ interface Props {
   height: string;
 }
 
-export default function ({ height }: Props) {
+export default function PurpleDotsGraphic({ height }: Props) {
   return (
     <svg
       width={(133 / 130) * parseInt(height)}

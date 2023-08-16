@@ -96,9 +96,15 @@ function LandingBg() {
 function Secondary() {
   return (
     <div className="w-screen sm:min-h-[300vh] lg:mt-20 lg:px-24 px-14 mb-20">
-      <SlideInElement children={<Main3Points />} />
-      <SlideInElement children={<AboutUs />} />
-      <SlideInElement children={<QuoteAndInquiry />} />
+      <SlideInElement>
+        <Main3Points />
+      </SlideInElement>
+      <SlideInElement>
+        <AboutUs />
+      </SlideInElement>
+      <SlideInElement>
+        <QuoteAndInquiry />
+      </SlideInElement>
     </div>
   );
 }
