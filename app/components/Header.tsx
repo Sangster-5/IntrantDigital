@@ -20,13 +20,19 @@ export function Navbar() {
         >
           Home
         </a>
-        <a href="/" className="col-span-1 sm:block hidden justify-center">
+        <a href="/#about" className="col-span-1 sm:block hidden justify-center">
           About
         </a>
-        <a href="/" className="col-span-1 sm:block hidden justify-center">
+        <a
+          href="/#inquiry"
+          className="col-span-1 sm:block hidden justify-center"
+        >
           Quote
         </a>
-        <a href="/" className="col-span-1 sm:block hidden flex justify-center">
+        <a
+          href="/#portfolio"
+          className="col-span-1 sm:block hidden flex justify-center"
+        >
           Portfolio
         </a>
         <div className="sm:col-span-1 col-span-5 flex justify-end">

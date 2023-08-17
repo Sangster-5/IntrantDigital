@@ -39,6 +39,10 @@
   font-weight: 700;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .slide-in-element {
   opacity: 0;
   transform: translateY(50px);

@@ -95,7 +95,10 @@ function LandingBg() {
 
 function Secondary() {
   return (
-    <div className="w-screen sm:min-h-[300vh] lg:mt-20 lg:px-24 px-8 mb-20">
+    <div
+      id="about"
+      className="w-screen sm:min-h-[300vh] lg:mt-20 lg:px-24 px-8 mb-20"
+    >
       <SlideInElement>
         <Main3Points />
       </SlideInElement>
@@ -171,7 +174,10 @@ function AboutUs() {
       </div>
       <div className="sm:grid flex flex-col row-span-2 grid-cols-3 lg:mt-5 mt-0">
         <div className="sm:col-span-2 sm:grid flex-row grid-cols-12">
-          <div className="bg-white rounded-xl p-5 h-full grid items-center grid-cols-2 drop-shadow-2xl col-span-11">
+          <div
+            id="portfolio"
+            className="bg-white rounded-xl p-5 h-full grid items-center grid-cols-2 drop-shadow-2xl col-span-11"
+          >
             <div className="lg:col-span-1 col-span-2 grid justify-center grid-rows-6">
               <div className="row-span-1 grid grid-cols-12">
                 <div className="col-span-2 grid items-center justify-center">
@@ -224,7 +230,7 @@ function AboutUs() {
 
 function QuoteAndInquiry() {
   return (
-    <div className="h-full mt-20">
+    <div className="h-full mt-20" id="inquiry">
       <div className="grid grid-rows-2">
         <h1 className="text-[#7D03FC] grid items-end pb-2 text-lg font-Poppins font-bold text-center">
           Intrant Digital
