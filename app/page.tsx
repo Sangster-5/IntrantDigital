@@ -28,7 +28,7 @@ function Landing() {
           {/* <h1 className="text-md text-black xl:text-red-500 lg:text-blue-500 md:text-green-500">
             Test
           </h1> */}
-          <h1 className="text-[#232323] leading-relaxed font-Poppins font-semibold text-4xl xl:w-3/4 lg:6/7 md:5/6 w-full">
+          <h1 className="text-[#232323] leading-relaxed whitespace-nowrap font-Poppins font-semibold sm:text-4xl text-3xl xl:w-3/4 lg:6/7 md:5/6 w-full">
             Digital Futures, <br /> Developed Together.
           </h1>
           <p className="mt-3 text-[#1F1F1F] font-Poppins lg:text-lg font-light md:w-3/4 sm:w-1/2 w-full">
@@ -37,15 +37,15 @@ function Landing() {
           </p>
           <div className="mt-4 -translate-x-2 grid md:grid-cols-1 grid-cols-2 gap-y-2">
             <div>
-              <div className="font-Poppins font-medium text-[#1E1E1E] flex flex-row gap-2">
+              <div className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex flex-row gap-2">
                 <img src="/check-icon.svg" alt="Guaranteed" />
                 Creative Designs
               </div>
-              <div className="font-Poppins font-medium text-[#1E1E1E] flex flex-row gap-2">
+              <div className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex flex-row gap-2">
                 <img src="/check-icon.svg" alt="Guaranteed" />
                 Quality Guarantee
               </div>
-              <div className="font-Poppins font-medium text-[#1E1E1E] flex flex-row gap-2">
+              <div className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex flex-row gap-2">
                 <img src="/check-icon.svg" alt="Guaranteed" />
                 Detail Oriented
               </div>
