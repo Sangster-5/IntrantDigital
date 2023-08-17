@@ -29,8 +29,8 @@ function Landing() {
             Digital Futures, <br /> Developed Together.
           </h1>
           <p className="mt-3 text-[#1F1F1F] font-Poppins lg:text-lg font-light md:w-3/4 sm:w-1/2 w-full">
-            Empowering your brand's online impact with custom development
-            solutions tailored to you.
+            Empowering your brand's online impact with custom design and
+            development solutions tailored to you.
           </p>
           <div className="mt-4 -translate-x-2 grid md:grid-cols-1 grid-cols-2 gap-y-2">
             <ul aria-label="Our Pillars">

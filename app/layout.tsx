@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Home | Intrant Digital",
   description:
-    "Empowering your brand's online impact with custom development solutions tailored to you. Quality Website Design & Development, Get Started Now.",
+    "Empowering your brand's online impact with custom design and development solutions tailored to you. Quality Website Design & Development, Get Started Now.",
 };
 
 export default function RootLayout({
