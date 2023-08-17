@@ -16,6 +16,7 @@ export function Navbar() {
       <div className="grid lg:col-span-4 md:col-span-5 col-span-6 grid-cols-5 items-center sm:gap-4 gap-0 justify-end font-Poppins">
         <a
           aria-label="Visit Home"
+          rel="canonical"
           href="/"
           className="col-span-1 sm:block hidden text-[#5F00C3] underline underline-[#5F00C3] underline-offset-8 font-medium"
         >
@@ -23,6 +24,7 @@ export function Navbar() {
         </a>
         <a
           aria-label="Visit About"
+          rel="canonical"
           href="/#about"
           className="col-span-1 sm:block hidden justify-center"
         >
@@ -30,6 +32,7 @@ export function Navbar() {
         </a>
         <a
           aria-label="Visit Inquiry Form"
+          rel="canonical"
           href="/#inquiry"
           className="col-span-1 sm:block hidden justify-center"
         >
@@ -37,6 +40,7 @@ export function Navbar() {
         </a>
         <a
           aria-label="Visit Portfolio"
+          rel="canonical"
           href="/#portfolio"
           className="col-span-1 sm:block hidden flex justify-center"
         >
