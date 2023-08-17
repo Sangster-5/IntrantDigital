@@ -23,7 +23,7 @@ function Landing() {
   return (
     <div>
       <LandingBg />
-      <div className="absolute grid grid-cols-12 right-0 top-0 lg:mt-24 mt-24 h-[75vh] items-center w-screen lg:px-24 px-14">
+      <div className="absolute grid grid-cols-12 right-0 top-0 lg:mt-24 mt-24 h-[75vh] items-center w-screen lg:px-24 px-8">
         <div className="flex flex-col md:justify-center sm:justify-center justify-end lg:col-span-5 md:col-span-6 col-span-12">
           {/* <h1 className="text-md text-black xl:text-red-500 lg:text-blue-500 md:text-green-500">
             Test
@@ -95,7 +95,7 @@ function LandingBg() {
 
 function Secondary() {
   return (
-    <div className="w-screen sm:min-h-[300vh] lg:mt-20 lg:px-24 px-14 mb-20">
+    <div className="w-screen sm:min-h-[300vh] lg:mt-20 lg:px-24 px-8 mb-20">
       <SlideInElement>
         <Main3Points />
       </SlideInElement>
@@ -233,7 +233,7 @@ function QuoteAndInquiry() {
           Get Started Now
         </h1>
       </div>
-      <div className="bg-white rounded-xl drop-shadow-3xl min-h-4/5 mb-20 mt-16 sm:p-8 p-2 grid grid-cols-5">
+      <div className="bg-white rounded-xl drop-shadow-3xl min-h-4/5 mb-20 mt-16 sm:p-8 p-0 grid grid-cols-5">
         <div className="lg:col-span-3 col-span-5 flex flex-col h-full">
           <div className="grid grid-cols-12">
             <div className="col-span-1 sm:grid hidden items-center">
