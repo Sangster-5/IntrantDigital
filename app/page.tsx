@@ -25,9 +25,6 @@ function Landing() {
       <LandingBg />
       <div className="absolute grid grid-cols-12 right-0 top-0 lg:mt-24 mt-24 h-[75vh] items-center w-screen lg:px-24 px-8">
         <div className="flex flex-col md:justify-center sm:justify-center justify-end lg:col-span-5 md:col-span-6 col-span-12">
-          {/* <h1 className="text-md text-black xl:text-red-500 lg:text-blue-500 md:text-green-500">
-            Test
-          </h1> */}
           <h1 className="text-[#232323] leading-relaxed whitespace-nowrap font-Poppins font-semibold sm:text-4xl text-3xl xl:w-3/4 lg:6/7 md:5/6 w-full">
             Digital Futures, <br /> Developed Together.
           </h1>
@@ -36,20 +33,20 @@ function Landing() {
             solutions tailored to you.
           </p>
           <div className="mt-4 -translate-x-2 grid md:grid-cols-1 grid-cols-2 gap-y-2">
-            <div>
-              <div className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex flex-row gap-2">
+            <ul aria-label="Our Pillars">
+              <li className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex items-center flex-row gap-2">
                 <img src="/check-icon.svg" alt="Guaranteed" />
                 Creative Designs
-              </div>
-              <div className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex flex-row gap-2">
+              </li>
+              <li className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex items-center flex-row gap-2">
                 <img src="/check-icon.svg" alt="Guaranteed" />
                 Quality Guarantee
-              </div>
-              <div className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex flex-row gap-2">
+              </li>
+              <li className="font-Poppins font-medium text-[#1E1E1E] sm:text-md text-sm whitespace-nowrap flex items-center flex-row gap-2">
                 <img src="/check-icon.svg" alt="Guaranteed" />
                 Detail Oriented
-              </div>
-            </div>
+              </li>
+            </ul>
 
             <div className="md:hidden flex items-end justify-end">
               <button
@@ -73,7 +70,7 @@ function Landing() {
           <img
             src="/landing-graphic.svg"
             className="md:flex hidden"
-            alt="Landing Graphic"
+            alt="Computer with people around it working together and hard on a website."
           />
         </div>
       </div>
@@ -87,7 +84,7 @@ function LandingBg() {
       <img
         className="xl:h-full lg:3/4 md:h-2/3 h-[45vw] absolute right-0 top-0 z-[-1]"
         src="/landing-bg.svg"
-        alt="Background Blobs"
+        alt="Wavy purple background symbolizing flow"
       />
     </div>
   );
@@ -120,9 +117,9 @@ function Main3Points() {
           <div className="flex flex-row">
             <img src="/lightbulb.svg" alt="Ideas" />
           </div>
-          <h1 className="flex flex-row font-Poppins font-semibold mt-3">
+          <h2 className="flex flex-row font-Poppins font-semibold mt-3">
             Creativity
-          </h1>
+          </h2>
           <p className="flex flex-row font-Poppins font-light text-sm w-4/5 mt-2">
             Our development and design team's dedication to excellence has been
             instrumental in achieving outstanding results.
@@ -134,12 +131,13 @@ function Main3Points() {
           <div className="flex flex-row">
             <img src="/Badge.svg" alt="Ideas" />
           </div>
-          <h1 className="flex flex-row font-Poppins font-semibold mt-3">
-            Creativity
-          </h1>
+          <h2 className="flex flex-row font-Poppins font-semibold mt-3">
+            Quality Guarantee
+          </h2>
           <p className="flex flex-row font-Poppins font-light text-sm w-4/5 mt-2">
-            Our development and design team's dedication to excellence has been
-            instrumental in achieving outstanding results.
+            Quality is key, our websites are built using the top technologies
+            and innovative practices that are built to last and grow with your
+            business.
           </p>
         </div>
       </div>
@@ -148,12 +146,12 @@ function Main3Points() {
           <div className="flex flex-row">
             <img src="/Bullseye.svg" alt="Ideas" />
           </div>
-          <h1 className="flex flex-row font-Poppins font-semibold mt-3">
-            Creativity
-          </h1>
+          <h2 className="flex flex-row font-Poppins font-semibold mt-3">
+            Detail Oriented
+          </h2>
           <p className="flex flex-row font-Poppins font-light text-sm w-4/5 mt-2">
-            Our development and design team's dedication to excellence has been
-            instrumental in achieving outstanding results.
+            We notice the small things, each website is observed with a fine
+            eye. We ensure nothing is missed and it is how you invisioned it.
           </p>
         </div>
       </div>
@@ -165,12 +163,12 @@ function AboutUs() {
   return (
     <div className="sm:grid grid-rows-3 flex flex-col lg:mt-5 mt-0">
       <div className="sm:grid flex flex-col row-span-1 py-20 grid-rows-2">
-        <h1 className="text-[#7D03FC] justify-center sm:grid flex flex-row items-end pb-2 text-lg font-Poppins font-bold text-center">
+        <h2 className="text-[#7D03FC] justify-center sm:grid flex flex-row items-end pb-2 text-lg font-Poppins font-bold text-center">
           Intrant Digital
-        </h1>
-        <h1 className="text-[#1A1A1A] justify-center sm:grid flex flex-row font-Poppins font-semibold text-4xl text-center">
+        </h2>
+        <h2 className="text-[#1A1A1A] justify-center sm:grid flex flex-row font-Poppins font-semibold text-4xl text-center">
           Learn More About Us
-        </h1>
+        </h2>
       </div>
       <div className="sm:grid flex flex-col row-span-2 grid-cols-3 lg:mt-5 mt-0">
         <div className="sm:col-span-2 sm:grid flex-row grid-cols-12">
@@ -183,9 +181,9 @@ function AboutUs() {
                 <div className="col-span-2 grid items-center justify-center">
                   <img src="/Suitcase-Graphic.svg" alt="Our Work" />
                 </div>
-                <h1 className="pl-5 font-Poppins col-span-10 grid items-center font-semibold text-xl text-black">
+                <h3 className="pl-5 font-Poppins col-span-10 grid items-center font-semibold text-xl text-black">
                   Our Portfolio
-                </h1>
+                </h3>
               </div>
 
               <div className="row-span-5 py-8 grid grid-cols-12 justify-center">
@@ -205,7 +203,7 @@ function AboutUs() {
             <div className="col-span-1 lg:block hidden">
               <img
                 src="/learn-about-us-graphic.svg"
-                alt="Learn More About Us"
+                alt="Person with forms and questions wanting to learn more."
               />
             </div>
           </div>
@@ -214,7 +212,9 @@ function AboutUs() {
           </div>
         </div>
         <div className="lg:ml-20 ml-0 sm:grid flex flex-col sm:col-span-1 col-span-3 py-8 px-10 bg-gradient-to-br from-[#aa87f4] rounded-xl via-[#9259F8] to-[#771AD9]">
-          <WeCreateFade height="70" />
+          <div aria-label="We Create">
+            <WeCreateFade height="70" />
+          </div>
           <div className="w-1/4 bg-white h-[1px] mt-4"></div>
           <p className="mt-4 font-Poppins font-light text-sm leading-loose">
             We are a team driven by innovation, weaving together diverse talents
@@ -232,12 +232,12 @@ function QuoteAndInquiry() {
   return (
     <div className="h-full mt-20" id="inquiry">
       <div className="grid grid-rows-2">
-        <h1 className="text-[#7D03FC] grid items-end pb-2 text-lg font-Poppins font-bold text-center">
+        <h2 className="text-[#7D03FC] grid items-end pb-2 text-lg font-Poppins font-bold text-center">
           Intrant Digital
-        </h1>
-        <h1 className="text-[#1A1A1A] font-Poppins font-semibold text-4xl text-center">
+        </h2>
+        <h3 className="text-[#1A1A1A] font-Poppins font-semibold text-4xl text-center">
           Get Started Now
-        </h1>
+        </h3>
       </div>
       <div className="bg-white rounded-xl drop-shadow-3xl min-h-4/5 mb-20 mt-16 sm:p-8 p-0 grid grid-cols-5">
         <div className="lg:col-span-3 col-span-5 flex flex-col h-full">
@@ -245,9 +245,9 @@ function QuoteAndInquiry() {
             <div className="col-span-1 sm:grid hidden items-center">
               <img src="/Quote-Icon.svg" alt="Quotes and Inquiries" />
             </div>
-            <h1 className="pl-8 sm:mt-0 mt-6 sm:text-3xl text-2xl sm:col-span-11 col-span-10 grid items-center text-[#1A1A1A] font-Poppins font-semibold">
+            <h2 className="pl-8 sm:mt-0 mt-6 sm:text-3xl text-2xl sm:col-span-11 col-span-10 grid items-center text-[#1A1A1A] font-Poppins font-semibold">
               Quotes & Inquiries
-            </h1>
+            </h2>
             <div className="sm:hidden grid col-span-1 items-end">
               <img
                 src="/Quote-Icon.svg"
@@ -262,14 +262,18 @@ function QuoteAndInquiry() {
               action={"/api/submitdetails"}
               className="lg:col-span-11 col-span-10 sm:pl-8 pl-0"
               method="get"
+              aria-label="Request Quote or Submit Inquiry Form"
             >
               <div className="grid gap-4 sm:grid-cols-2 grid-cols-1">
                 <div className="grid grid-rows-2">
                   <div>
-                    <h1 className="text-[#222222] font-Poppins font-semibold">
+                    <label
+                      htmlFor="name"
+                      className="text-[#222222] font-Poppins font-semibold"
+                    >
                       First Name
                       <span className="text-red-400 ml-2">*</span>
-                    </h1>
+                    </label>
                   </div>
                   <div>
                     <input
@@ -283,10 +287,13 @@ function QuoteAndInquiry() {
                 </div>
                 <div className="grid grid-rows-2">
                   <div>
-                    <h1 className="text-[#222222] font-Poppins font-semibold">
+                    <label
+                      htmlFor="email"
+                      className="text-[#222222] font-Poppins font-semibold"
+                    >
                       Email Address
                       <span className="text-red-400 ml-2">*</span>
-                    </h1>
+                    </label>
                   </div>
                   <div>
                     <input
@@ -302,9 +309,12 @@ function QuoteAndInquiry() {
               <div className="row-span-1 mt-4 grid gap-4 sm:grid-cols-2 grid-cols-1">
                 <div className="grid grid-rows-2">
                   <div>
-                    <h1 className="text-[#222222] font-Poppins font-semibold">
+                    <label
+                      htmlFor="company"
+                      className="text-[#222222] font-Poppins font-semibold"
+                    >
                       Company Name
-                    </h1>
+                    </label>
                   </div>
                   <div>
                     <input
@@ -317,9 +327,12 @@ function QuoteAndInquiry() {
                 </div>
                 <div className="grid grid-rows-2">
                   <div>
-                    <h1 className="text-[#222222] font-Poppins font-semibold">
+                    <label
+                      htmlFor="phone"
+                      className="text-[#222222] font-Poppins font-semibold"
+                    >
                       Phone Number
-                    </h1>
+                    </label>
                   </div>
                   <div>
                     <input
@@ -334,10 +347,13 @@ function QuoteAndInquiry() {
 
               <div className="row-span-1 mt-4">
                 <div className="flex flex-col">
-                  <h1 className="text-[#222222] flex flex-row items-center font-Poppins font-semibold">
+                  <label
+                    htmlFor="description"
+                    className="text-[#222222] flex flex-row items-center font-Poppins font-semibold"
+                  >
                     Description
                     <span className="text-red-400 ml-2">*</span>
-                  </h1>
+                  </label>
                   <div className="mt-2">
                     <textarea
                       name="description"
@@ -352,9 +368,12 @@ function QuoteAndInquiry() {
               <div className="row-span-1 mt-4">
                 <div className="grid grid-rows-2">
                   <div>
-                    <h1 className="text-[#222222] font-Poppins font-semibold">
+                    <label
+                      htmlFor="budget"
+                      className="text-[#222222] font-Poppins font-semibold"
+                    >
                       Budget
-                    </h1>
+                    </label>
                   </div>
                   <div>
                     <input
@@ -368,10 +387,10 @@ function QuoteAndInquiry() {
               </div>
 
               <div className="mt-4 text-[#1A1A1A] font-Poppins grid grid-rows-2 row-span-1">
-                <h1 className="text-[#222222] flex flex-row items-center font-Poppins font-semibold">
+                <label className="text-[#222222] flex flex-row items-center font-Poppins font-semibold">
                   Specifics
                   <span className="text-red-400 ml-2">*</span>
-                </h1>
+                </label>
                 <div className="mt-2 flex flex-wrap items-center gap-2">
                   <div className="flex items-center">
                     <label className="mr-2 text-sm" htmlFor="Website">
@@ -417,6 +436,7 @@ function QuoteAndInquiry() {
                   type="submit"
                   className="h-12 w-40 rounded-full bg-gradient-to-r from-[#7D03FC] to-[#9275E0] hover:cursor-pointer"
                   value={"Submit Details"}
+                  aria-label="Submit Request"
                 />
               </div>
             </form>
