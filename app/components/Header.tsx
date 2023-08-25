@@ -7,7 +7,7 @@ export default function Header() {
 export function Navbar() {
   return (
     <div className="w-full grid grid-cols-12 h-24 items-center lg:px-24 px-8">
-      <div className="lg:col-span-8 md:col-span-7 col-span-6 flex flex-row items-center gap-4">
+      <div className="lg:col-span-8 md:col-span-7 col-span-6 flex flex-row items-center sm:gap-4 gap-1">
         <LogoPurple height="45" />
         <h1 className="text-[#835DEC] sm:text-1.5xl text-md md:font-[400] sm:mix-blend-normal mix-blend-multiply font-medium whitespace-nowrap font-Josefin-Sans">
           INTRANT DIGITAL

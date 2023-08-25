@@ -6,6 +6,7 @@ import { SlideInElement } from "./components/SlideInElement";
 import PurpleDotsGraphic from "./components/PurpleDotsGraphic";
 import WeCreateFade from "./components/WeCreateFade";
 import QuoteInquiryFormGraphic from "./components/QuoteInquiryFormGraphic";
+import axios from "axios";
 
 export default function Home() {
   return (
@@ -48,28 +49,28 @@ function Landing() {
               </li>
             </ul>
 
-            <div className="md:hidden flex items-end justify-end">
+            {/* <div className="md:hidden flex items-end justify-end">
               <button
                 aria-label="Get Started"
                 className="h-12 w-[9.5rem] rounded-full bg-gradient-to-r from-[#7647F5] to-[#9275E0]"
               >
                 Get Started
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="mt-4">
             <button
               aria-label="Get Started"
-              className="h-12 w-[9.5rem] md:block hidden rounded-full bg-gradient-to-r from-[#7647F5] to-[#9275E0]"
+              className="h-12 md:w-[9.5rem] w-40 rounded-full bg-gradient-to-r from-[#7647F5] to-[#9275E0]"
             >
               Get Started
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center lg:col-span-7 md:col-span-6 col-span-0">
+        <div className="flex justify-center items-center lg:col-span-7 mt-10 md:col-span-6 col-span-12">
           <img
             src="/landing-graphic.svg"
-            className="md:flex hidden"
+            className=""
             alt="Computer with people around it working together and hard on a website."
           />
         </div>
@@ -111,7 +112,7 @@ function Secondary() {
 
 function Main3Points() {
   return (
-    <div className="row-span-1 col-span-2 justify-center gap-12 w-full xl:min-h-[250px] lg:min-h-[350px] md:min-h-[350px] sm:flex grid grid-rows-1">
+    <div className="row-span-1 col-span-2 justify-center gap-12 w-full xl:min-h-[250px] lg:min-h-[350px] md:min-h-[350px] sm:flex grid grid-rows-1 md:mt-0 mt-[15vh]">
       <div className="bg-gradient-to-br from-[#7345D7] drop-shadow-3xl rounded-xl rounded-tr-[50%] to-[#986FF8] sm:w-1/3 w-full sm:h-auto h-full sm:py-0 py-8 px-8 grid items-center">
         <div>
           <div className="flex flex-row">
@@ -259,7 +260,10 @@ function QuoteAndInquiry() {
           <div className="row-span-1 grid grid-cols-12 pr-5 mt-8">
             <div className="col-span-1 w-full h-full"></div>
             <form
-              action={"/api/submitdetails"}
+              id="contact"
+              action={
+                "https://docs.google.com/forms/u/6/d/e/1FAIpQLSdb4hpPaq5nsCAweTPZ37pONcqt2UhGJ7CRPPrCUjkiGPvWIQ/formResponse"
+              }
               className="lg:col-span-11 col-span-10 sm:pl-8 pl-0"
               method="get"
               aria-label="Request Quote or Submit Inquiry Form"
@@ -279,7 +283,8 @@ function QuoteAndInquiry() {
                     <input
                       className="text-[#1A1A1A] font-light font-Poppins outline-none w-full drop-shadow-sm border border-1 border-grey-500 rounded-md px-2 py-1"
                       type="text"
-                      name="name"
+                      name="entry.2129001064"
+                      id="name"
                       placeholder="First Name"
                       required
                     />
@@ -299,7 +304,8 @@ function QuoteAndInquiry() {
                     <input
                       className="text-[#1A1A1A] font-light font-Poppins outline-none w-full drop-shadow-sm border border-1 border-grey-500 rounded-md px-2 py-1"
                       type="email"
-                      name="email"
+                      id="email"
+                      name="entry.1081718932"
                       placeholder="Email Address"
                       required
                     />
@@ -320,7 +326,8 @@ function QuoteAndInquiry() {
                     <input
                       className="text-[#1A1A1A] font-light font-Poppins outline-none w-full drop-shadow-sm border border-1 border-grey-500 rounded-md px-2 py-1"
                       type="text"
-                      name="company"
+                      name="entry.1024962110"
+                      id="company"
                       placeholder="Company Name"
                     />
                   </div>
@@ -338,7 +345,8 @@ function QuoteAndInquiry() {
                     <input
                       className="text-[#1A1A1A] font-light font-Poppins outline-none w-full drop-shadow-sm border border-1 border-grey-500 rounded-md px-2 py-1"
                       type="tel"
-                      name="phone"
+                      name="entry.1081322583"
+                      id="phone"
                       placeholder="Phone Number"
                     />
                   </div>
@@ -356,8 +364,9 @@ function QuoteAndInquiry() {
                   </label>
                   <div className="mt-2">
                     <textarea
-                      name="description"
+                      name="entry.624050575"
                       required
+                      id="description"
                       className="text-[#1A1A1A] font-light font-Poppins outline-none w-full drop-shadow-sm border border-1 border-grey-500 min-h-[200px] rounded-md px-2 py-1"
                       placeholder="Describe what you're looking for or any questions. Provide Links if Necessary"
                     />
@@ -379,14 +388,15 @@ function QuoteAndInquiry() {
                     <input
                       className="text-[#1A1A1A] font-light font-Poppins outline-none w-full drop-shadow-sm border border-1 border-grey-500 rounded-md px-2 py-1"
                       type="text"
-                      name="budget"
+                      id="budget"
+                      name="entry.1268415430"
                       placeholder="Budget"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="mt-4 text-[#1A1A1A] font-Poppins grid grid-rows-2 row-span-1">
+              <div className="mt-4 hidden text-[#1A1A1A] font-Poppins grid grid-rows-2 row-span-1">
                 <label className="text-[#222222] flex flex-row items-center font-Poppins font-semibold">
                   Specifics
                   <span className="text-red-400 ml-2">*</span>
@@ -396,7 +406,12 @@ function QuoteAndInquiry() {
                     <label className="mr-2 text-sm" htmlFor="Website">
                       Website
                     </label>
-                    <input className="" type="checkbox" name="Website" id="" />
+                    <input
+                      className=""
+                      type="checkbox"
+                      name="entry.1317573497"
+                      id=""
+                    />
                   </div>
 
                   <div className="flex whitespace-nowrap items-center">
@@ -406,28 +421,48 @@ function QuoteAndInquiry() {
                     >
                       General Inquiry
                     </label>
-                    <input className="" type="checkbox" name="Inquiry" id="" />
+                    <input
+                      className=""
+                      type="checkbox"
+                      name="entry.1601300105"
+                      id=""
+                    />
                   </div>
 
                   <div className="flex items-center">
                     <label className="mr-2 text-sm" htmlFor="Software">
                       Software
                     </label>
-                    <input className="" type="checkbox" name="Software" id="" />
+                    <input
+                      className=""
+                      type="checkbox"
+                      name="entry.1121891337"
+                      id=""
+                    />
                   </div>
 
                   <div className="flex items-center">
                     <label className="mr-2 text-sm" htmlFor="Design">
                       Design
                     </label>
-                    <input className="" type="checkbox" name="Design" id="" />
+                    <input
+                      className=""
+                      type="checkbox"
+                      name="entry.380025316"
+                      id=""
+                    />
                   </div>
 
                   <div className="flex items-center">
                     <label className="mr-2 text-sm" htmlFor="Other">
                       Other
                     </label>
-                    <input className="" type="checkbox" name="Other" id="" />
+                    <input
+                      className=""
+                      type="checkbox"
+                      name="entry.1252268454"
+                      id=""
+                    />
                   </div>
                 </div>
               </div>
